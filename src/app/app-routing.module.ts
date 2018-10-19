@@ -6,10 +6,11 @@ import { BiblioComponent } from './biblio/biblio.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PlaylistComponent } from './playlist/playlist.component';
 const routes: Routes = [
+  { path: '', redirectTo: '/biblio', pathMatch: 'full' },
   { path: 'list', component: ListComponent },
   { path: 'biblio', component: BiblioComponent },
-  { path: 'navbar', component: NavbarComponent},
-  {path: 'playlist', component: PlaylistComponent}
+  { path: 'navbar', component: NavbarComponent },
+  { path: 'playlist', component: PlaylistComponent }
 ];
 @NgModule({
   imports: [
@@ -20,7 +21,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-
-
-
-
