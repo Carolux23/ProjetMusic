@@ -35,6 +35,9 @@ h5 {
     transform: scale(1.05);
     transition: 0.5s;
 }
+.card:not(:hover) { 
+    transition: 0.5s;
+}
 .img-play {
     border-bottom: solid 3px goldenrod;
     border-radius: 15px 15px 0px 0px;
