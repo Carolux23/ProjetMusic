@@ -1,24 +1,41 @@
-#content {
+body{
+    background-color:  #383737;
+    height: 100%; 
+    color: GoldenRod;
+    margin-bottom: 20px;
+}
+
+.card{
+    background-color: white;
+    margin:0;
+    padding: 0;
     position: relative;
-    background-color: #383737d0;
-    min-width: 30vh;
-    padding: 1vh;
+    
+    padding:0;
     border: solid 3px goldenrod;
     border-radius: 15px;
     box-shadow: 6px 6px 6px black;
+    overflow: hidden;
+}
+.card-body{
+    padding: 0;
 }
 
 img {
-    width: 80%;
+    width: 100%;
     height: auto;
+   
+
 }
 
 .card-artist {
     position: relative;
     margin: 0;
-    margin-top: solid 3px goldenrod;
+    padding-left: 1vh;
+    border-top: solid 3px goldenrod;
     width: 100%;
-    color: white;
+    z-index: 1;
+    color: #383737;
 }
 
 .card-title {
@@ -26,13 +43,14 @@ img {
     margin: 0;
     width: 100%;
     color: GoldenRod;
+    padding-left: 1.5vh;
 }
 
 #player {
-
-    width: 100%;
+    width: 85%;
 }
 
 #addTo {
-    width: 15%;
+width: 10%;
+height: 100%;
 }
