@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'music';
+    src: url('../../assets/Musicografi.ttf');
+}
+.row {
+    height: 10vh;
+    background-color: black;
+    color: goldenrod;
+}
+#titre, #search {
+    text-align: center;
+}
+h1, h3, h5 {
+    display: inline;
+    font-family: 'music';
+}
+.pos-f-t {
+    background-color: black;
+    height: 10vh;
+}
+#navbarToggleExternalContent {
+    background-color: black;
+}
+#titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search {
+    display: flex;
+    justify-content: flex-end;
+}
+#inputsearch {
+    display: none;
+}
+#buttonsearch {
+    background-image: url("../../assets/searchGray.png");
+    background-size: 100%;
+    width: 6vh;
+    height: 6vh;
+    margin-right: 1vw;
+}
+

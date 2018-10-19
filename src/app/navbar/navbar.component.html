@@ -1,3 +1,47 @@
-<p>
-  navbar works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3">
+
+      <div class="pos-f-t">
+        <nav class="navbar navbar-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="p-4">
+            <h4 class="text-white" routerLink="/biblio">Bibliothèque</h4>
+            <h4 class="text-white" routerLink="/list">Playlist</h4>
+            <ul>
+              <li>
+                <h6 class="text-white" routerLink="/playlist">myPlaylist 1</h6>
+              </li>
+              <li>
+                <h6 class="text-white">myPlaylist 2</h6>
+              </li>
+              <li>
+                <h6 class="text-white">myPlaylist 3</h6>
+              </li>
+            </ul>
+            <span class="text-muted">Une idée orignale de SCAD_music</span>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+    <div id="titre" class="col-6">
+      <span> <h1>S C A D<h3> _music</h3></h1> </span>
+    </div>
+
+    <div id="search" class="col-3">
+      <form class="form-inline">
+        <input id="inputsearch" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <div id="buttonsearch" (click)="displaySearch()"></div>
+      </form>
+    </div>
+
+  </div>
+</div>
