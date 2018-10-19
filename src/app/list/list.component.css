@@ -1,0 +1,52 @@
+.container-fluid {
+    background-color:  #383737;
+    height: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    z-index: -1;
+    padding: 5vh 5vw 5vh 5vw;
+}
+h5 {
+    text-align: center;
+    font-weight: bold;
+}
+#waste {
+    margin-right: 0.5vw;
+    width: 2.5vw;
+    float: right;
+}
+#waste {
+    cursor: pointer;
+}
+.btn {
+    background-color: black;
+    margin-left: 0.5vw;
+}
+.card {
+    border: solid 3px goldenrod;
+    border-radius: 15px;
+    box-shadow: 6px 6px 6px black;
+    height: 100%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+}
+.card:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.img-play {
+    border-bottom: solid 3px goldenrod;
+    border-radius: 15px 15px 0px 0px;
+}
+.ajouter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-add {
+    width: 8vw;
+}
+.img-add:hover {
+    cursor: pointer;
+}
