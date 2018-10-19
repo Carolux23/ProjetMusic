@@ -1,0 +1,38 @@
+#content {
+    position: relative;
+    background-color: #383737d0;
+    min-width: 30vh;
+    padding: 1vh;
+    border: solid 3px goldenrod;
+    border-radius: 15px;
+    box-shadow: 6px 6px 6px black;
+}
+
+img {
+    width: 80%;
+    height: auto;
+}
+
+.card-artist {
+    position: relative;
+    margin: 0;
+    margin-top: solid 3px goldenrod;
+    width: 100%;
+    color: white;
+}
+
+.card-title {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    color: GoldenRod;
+}
+
+#player {
+
+    width: 100%;
+}
+
+#addTo {
+    width: 15%;
+}
