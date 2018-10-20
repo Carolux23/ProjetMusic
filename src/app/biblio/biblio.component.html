@@ -4,14 +4,14 @@
     <div class="col-3" *ngFor="let musics of musicTable">
       <div class="card">
         <div  class="card-body">
-          <img class="card-img-top" src="../../assets/img{{musicTable.id}}.jpg" alt="Card image cap">
+          <img class="card-img-top" src="../../assets/img{{musicTable.lien_img}}" alt="Card image cap">
 
           <h5 class="card-artist">Beethoven</h5>
           <p class="card-title">9th Symphony</p>
          
           <div class="d-flex justify-content-around align-items-center">
               <audio id="player" controls>
-                  <source src="../../assets/{{musicTable.titre}}-{{musicTable.artiste}}.mp3" type="audio/mpeg">
+                  <source src="../../assets/{{musicTable.lien_audio}}" type="audio/mpeg">
                 </audio> 
             
             <img id="addTo" src=".\src\assets\plus.png" alt="add">
