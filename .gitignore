@@ -10,8 +10,6 @@
 
 # dependencies
 /node_modules
-
-#musics
 /assets/musics
 
 # IDEs and editors
