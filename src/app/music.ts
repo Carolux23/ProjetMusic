@@ -3,6 +3,6 @@ export interface Music {
     titre: string;
     interprete: string;
     lien_audio: string;
-    lien_img:string;
-    genre:string;
+    lien_img: string;
+    genre: string;
 }

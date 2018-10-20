@@ -1,3 +1,24 @@
-<p>
-  playlist works!
-</p>
+<main class="container-fluid">
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let music of content">
+      <div class="card">
+        <div class="card-body">
+          <img class="card-img-top" src=".\src\assets\musics\{{music.lien_img}}" alt="Album-image">
+
+          <h5 class="card-artist">{{music.interprete}}</h5>
+          <p class="card-title">{{music.titre}}</p>
+
+          <div class="d-flex justify-content-around align-items-center">
+            <audio id="player" controls>
+              <source src=".\src\assets\musics\{{music.lien_audio}}" type="audio/mpeg">
+            </audio>
+            <div id="trash">
+              <img src="../../assets/waste.png" id="waste">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

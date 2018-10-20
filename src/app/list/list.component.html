@@ -1,11 +1,11 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-3 colonne">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let maList of list">
       <div class="card" style="width: 80%;">
         <img class="card-img-top img-play" src="../../assets/musique.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Playlist Rock</h5>
-          <a href="#" class="btn btn-dark">Voir</a>
+          <h5 class="card-title">{{maList.name}}</h5>
+          <a class="btn btn-dark" routerLink="/playlist" (click)="getPlayList()" >Voir {{maList.name}} {{maList.id}}</a>
           <img src="../../assets/waste.png" id="waste">
         </div>
       </div>

@@ -1,25 +1,47 @@
-
-<body class="container-fluid">
+<main class="container-fluid">
   <div class="row">
-    <div class="col-3" *ngFor="let musics of musicTable">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let music of musicTable">
       <div class="card">
-        <div  class="card-body">
-          <img class="card-img-top" src="../../assets/img{{musicTable.lien_img}}" alt="Card image cap">
+        <div class="card-body">
+          <img class="card-img-top" src=".\src\assets\musics\{{music.lien_img}}" alt="Album-image">
 
-          <h5 class="card-artist">Beethoven</h5>
-          <p class="card-title">9th Symphony</p>
-         
+          <h5 class="card-artist">{{music.interprete}}</h5>
+          <p class="card-title">{{music.titre}}</p>
+
           <div class="d-flex justify-content-around align-items-center">
-              <audio id="player" controls>
-                  <source src="../../assets/{{musicTable.lien_audio}}" type="audio/mpeg">
-                </audio> 
-            
-            <img id="addTo" src=".\src\assets\plus.png" alt="add">
+            <audio id="player" controls>
+              <source src=".\src\assets\musics\{{music.lien_audio}}" type="audio/mpeg">
+            </audio>
+
+            <div class="pos-f-t ">
+              <div id="addTo" type="button" data-toggle="collapse" data-target="#addToPlaylist" aria-controls="addToPlaylist"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <img id="addTo" src=".\src\assets\plus.png" alt="add">
+              </div>
+            </div>
 
           </div>
-        </div>
+          <div class="collapse" id="addToPlaylist">
+              <div class="card-title">Add {{music.titre}} to</div> 
+              <ul>
+                  <li>
+                    <h6>myPlaylist 1</h6>
+                  </li>
+                  <li>
+                    <h6>myPlaylist 2</h6>
+                  </li>
+                  <li>
+                    <h6>myPlaylist 3</h6>
+                  </li>
+                </ul>
+              </div>
 
+        </div>
       </div>
+
+
     </div>
+
+
   </div>
-</body>
+</main>

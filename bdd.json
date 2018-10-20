@@ -1,88 +1,162 @@
 {
-    "Biblio": [
+    "biblio": [
       {
         "id": 1,
         "titre": "Copelandia",
         "interprete": "DigitalDawn",
         "lien_audio": "Copelandia-DigitalDawn.mp3",
-        "lien_img": "img1.jpg"
+        "lien_img": "img1.jpg",
+        "genre": "classic"
       },
       {
         "id": 2,
         "titre": "Breathe",
         "interprete": "AxlampArth",
         "lien_audio": "Breathe-AxlampArth.mp3",
-        "lien_img": "img2.jpg"
+        "lien_img": "img2.jpg",
+        "genre": "classic"
       },
       {
         "id": 3,
         "titre": "Crazier",
         "interprete": "DorineLevy",
         "lien_audio": "Crazier-DorineLevy.mp3",
-        "lien_img": "img3.jpg"
+        "lien_img": "img3.jpg",
+        "genre": "classic"
       },
       {
         "id": 4,
         "titre": "UniversalFunk",
         "interprete": "DuoTeslar",
         "lien_audio": "UniversalFunk-DuoTeslar.mp3",
-        "lien_img": "img4.jpg"
+        "lien_img": "img4.jpg",
+        "genre": "rock"
       },
       {
         "id": 5,
         "titre": "DiscoveringTheUnknown",
         "interprete": "GeorD",
         "lien_audio": "DiscoveringTheUnknown-GeorD.mp3",
-        "lien_img": "img5.jpg"
+        "lien_img": "img5.jpg",
+        "genre": "rock"
       },
       {
         "id": 6,
         "titre": "DarkBlondeRises",
         "interprete": "LiVKi",
         "lien_audio": "DarkBlondeRises-LiVKi.mp3",
-        "lien_img": "img6.jpg"
+        "lien_img": "img6.jpg",
+        "genre": "rock"
       },
       {
         "id": 7,
         "titre": "StarlightCinematicEpicMusic",
         "interprete": "NicoMaximilian",
         "lien_audio": "StarlightCinematicEpicMusic-NicoMaximilian.mp3",
-        "lien_img": "img7.jpg"
+        "lien_img": "img7.jpg",
+        "genre": "rock"
       },
       {
         "id": 8,
         "titre": "ElectricHopes",
         "interprete": "PsyDen",
         "lien_audio": "ElectricHopes-PsyDen.mp3",
-        "lien_img": "img8.jpg"
+        "lien_img": "img8.jpg",
+        "genre": "pop"
       },
       {
         "id": 9,
         "titre": "ERUTUF",
         "interprete": "SaMZIng",
-        "lien": "ERUTUF-SaMZIng.mp3",
-        "lien_img": "img9.jpg"
+        "lien_audio": "ERUTUF-SaMZIng.mp3",
+        "lien_img": "img9.jpg",
+        "genre": "pop"
       },
       {
         "id": 10,
         "titre": "Asteroids",
         "interprete": "SyunNakano",
         "lien_audio": "Asteroids-SyunNakano.mp3",
-        "lien_img": "img10.jpg"
+        "lien_img": "img10.jpg",
+        "genre": "pop"
       },
       {
         "id": 11,
         "titre": "TheWarWithin",
         "interprete": "TheARTISANSBeats",
         "lien_audio": "TheWarWithin-TheARTISANSBeats.mp3",
-        "lien_img": "img11.jpg"
+        "lien_img": "img11.jpg",
+        "genre": "pop"
       },
       {
         "id": 12,
         "titre": "Immersion",
         "interprete": "Vulpey",
         "lien_audio": "Immersion-Vulpey.mp3",
-        "lien_img": "img12.jpg"
+        "lien_img": "img12.jpg",
+        "genre": "pop"
+      }
+    ],
+
+    "list" :[
+      {
+        "id": 1,
+        "name": "playList-01",
+        "lien": "http://localhost:3000/playList-01"
+      },
+      {
+        "id": 2,
+        "name": "playList-02",
+        "lien": "http://localhost:3000/playList-02"
+
+      },
+      {
+        "id": 3,
+        "name": "playList-02",
+        "lien": "http://localhost:3000/playList-03"
+      }
+    ],
+
+    "playList-01":[
+      {
+        "id": 12,
+        "titre": "Immersion",
+        "interprete": "Vulpey",
+        "lien_audio": "Immersion-Vulpey.mp3",
+        "lien_img": "img12.jpg",
+        "genre": "pop"
+      },
+      {
+        "id": 11,
+        "titre": "TheWarWithin",
+        "interprete": "TheARTISANSBeats",
+        "lien_audio": "TheWarWithin-TheARTISANSBeats.mp3",
+        "lien_img": "img11.jpg",
+        "genre": "pop"
+      },
+      {
+        "id": 8,
+        "titre": "ElectricHopes",
+        "interprete": "PsyDen",
+        "lien_audio": "ElectricHopes-PsyDen.mp3",
+        "lien_img": "img8.jpg",
+        "genre": "pop"
+      },
+      {
+        "id": 9,
+        "titre": "ERUTUF",
+        "interprete": "SaMZIng",
+        "lien_audio": "ERUTUF-SaMZIng.mp3",
+        "lien_img": "img9.jpg",
+        "genre": "pop"
+      },
+      {
+        "id": 10,
+        "titre": "Asteroids",
+        "interprete": "SyunNakano",
+        "lien_audio": "Asteroids-SyunNakano.mp3",
+        "lien_img": "img10.jpg",
+        "genre": "pop"
       }
     ]
 }

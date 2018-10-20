@@ -8,6 +8,7 @@ import { ListComponent } from './list/list.component';
 import { PlaylistComponent } from './playlist/playlist.component';
 import { AppRoutingModule } from './app-routing.module';
 import { GenreComponent } from './genre/genre.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,10 @@ import { GenreComponent } from './genre/genre.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserModule,
+    // import HttpClientModule after BrowserModule.
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
