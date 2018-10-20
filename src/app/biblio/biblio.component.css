@@ -2,7 +2,7 @@ body{
     background-color:  #383737;
     height: 100%; 
     color: GoldenRod;
-    margin-bottom: 20px;
+    padding: 5vh 5vw 5vh 5vw;
 }
 
 .card{
@@ -10,7 +10,7 @@ body{
     margin:0;
     padding: 0;
     position: relative;
-    
+    width: 80%;
     padding:0;
     border: solid 3px goldenrod;
     border-radius: 15px;
