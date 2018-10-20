@@ -1,0 +1,76 @@
+{
+    "Biblio": [
+      {
+        "titre": "Copelandia",
+        "interprete": "DigitalDawn",
+        "lienM": "digitaldawn-Copelandia - Arctic Cave.mp3",
+        "lienIMG": "AbrahamLake.jpg"
+      },
+      {
+        "titre": "Breathe",
+        "interprete": "Axl_amp_Arth",
+        "lien": "Axl _amp_ Arth-Breathe.mp3",
+        "lienIMG": "AbuDhabi.jpg"
+      },
+      {
+        "titre": "Crazier",
+        "interprete": "Dorine Levy",
+        "lien": "Dorine Levy-Crazier.mp3",
+        "lienIMG": "AcadiaNationalPark.jpg"
+      },
+      {
+        "titre": "UniversalFunk",
+        "interprete": "DuoTeslar",
+        "lien": "Duo Teslar-Universal Funk.mp3",
+        "lienIMG": "AdventdalenNorway.jpg"
+      },
+      {
+        "titre": "DiscoveringTheUnknown",
+        "interprete": "GeorD",
+        "lien": "GeorD-DiscoveringTheUnknown.mp3",
+        "lienIMG": "AfricanLion.jpg"
+      },
+      {
+        "titre": "DarkBlondeRises",
+        "interprete": "LiVKi",
+        "lien": "LiVKi-DarkBlondeRises.mp3",
+        "lienIMG": "AgraIndia.jpg"
+      },
+      {
+        "titre": "Starlight_Cinematic_Epic Music",
+        "interprete": "LiVKi",
+        "lien": "NicoMaximilian_Composer-Starlight_Cinematic_Epic Music.mp3",
+        "lienIMG": "AiguilleDuMidi.jpg"
+      },
+      {
+        "titre": "ElectricHopes",
+        "interprete": "PsyDen",
+        "lien": "PsyDen-ElectricHope.mp3",
+        "lienIMG": "Alpaca.jpg"
+      },
+      {
+        "titre": "ERUTUF",
+        "interprete": "SaMZIng",
+        "lien": "SaMZIng-ERUTUF.mp3",
+        "lienIMG": "AlpineIbex.jpg"
+      },
+      {
+        "titre": "Asteroids",
+        "interprete": "SyunNakano",
+        "lien": "SyunNakano-Asteroid.mp3",
+        "lienIMG": "AmorgosIsland.jpg"
+      },
+      {
+        "titre": "TheWarWithin",
+        "interprete": "The ARTISANSBeats",
+        "lien": "The ARTISANSBeats-TheWarWithin.mp3",
+        "lienIMG": "Andalusia.jpg"
+      },
+      {
+        "titre": "Immersion",
+        "interprete": "Vulpey",
+        "lien": "Vulpey-Immersion.mp3",
+        "lienIMG": "AndeanFlamingo.jpg"
+      }
+    ]
+}
