@@ -15,8 +15,13 @@
     src: url('../../assets/slice.ttf');
 }
 
-.container {
+.container-fluid {
+    background-color:  #383737;
+    height: 100%;
     padding-top: 5vh;
+    padding-bottom: 5vh;
+    z-index: -1;
+    padding: 5vh 5vw 5vh 5vw;
     color: white;
     font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft JhengHei","PingFang TC","Lantinghei TC","Hiragino Kaku Gothic Pro","Meiryo","MS Gothic",sans-serif;
 }

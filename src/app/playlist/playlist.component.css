@@ -1,0 +1,72 @@
+main {
+    background-color: #383737;
+    height: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    z-index: -1;
+    padding: 5vh 5vw 5vh 5vw;
+}
+
+.card {
+    background-color: white;
+    margin: 2vh;
+    padding: 0;
+    position: relative;
+    width: 80%;
+    padding: 0;
+    border: solid 3px goldenrod;
+    border-radius: 15px;
+    box-shadow: 6px 6px 6px black;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.card-artist {
+    position: relative;
+    margin: 0;
+    padding-left: 1vh;
+    border-top: solid 3px goldenrod;
+    width: 100%;
+    color: #383737;
+}
+
+.card-title {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    color: GoldenRod;
+    padding-left: 1.5vh;
+}
+
+#player {
+    width: 80%;
+}
+
+#trash {
+    width: 15%;
+}
+
+#trash:hover {
+    animation-name: bumps;
+    animation-duration: 250ms;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+@keyframes bumps {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.2, 1.2);
+    }
+}

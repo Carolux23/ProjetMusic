@@ -25,10 +25,11 @@ h5 {
 .card {
     border: solid 3px goldenrod;
     border-radius: 15px;
+    margin: 2vh;
     box-shadow: 6px 6px 6px black;
     height: 100%;
     -webkit-transform: scale(1);
-	transform: scale(1);
+    transform: scale(1);
 }
 .card:hover {
     -webkit-transform: scale(1.05);
