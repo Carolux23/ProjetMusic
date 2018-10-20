@@ -1,5 +1,8 @@
 export interface Music {
-    titre : string;
-    interprete : string;
-    lien : string;
+    id: number;
+    titre: string;
+    interprete: string;
+    lien_audio: string;
+    lien_img:string;
+    genre:string;
 }

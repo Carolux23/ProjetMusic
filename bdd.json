@@ -1,88 +1,88 @@
 {
     "Biblio": [
       {
-        "id": "1",
+        "id": 1,
         "titre": "Copelandia",
         "interprete": "DigitalDawn",
-        "lienM": "Copelandia-DigitalDawn.mp3",
-        "lienIMG": "img1.jpg"
+        "lien_audio": "Copelandia-DigitalDawn.mp3",
+        "lien_img": "img1.jpg"
       },
       {
-        "id": "2",
+        "id": 2,
         "titre": "Breathe",
         "interprete": "AxlampArth",
-        "lien": "Breathe-AxlampArth.mp3",
-        "lienIMG": "img2.jpg"
+        "lien_audio": "Breathe-AxlampArth.mp3",
+        "lien_img": "img2.jpg"
       },
       {
-        "id": "3",
+        "id": 3,
         "titre": "Crazier",
         "interprete": "DorineLevy",
-        "lien": "Crazier-DorineLevy.mp3",
-        "lienIMG": "img3.jpg"
+        "lien_audio": "Crazier-DorineLevy.mp3",
+        "lien_img": "img3.jpg"
       },
       {
-        "id": "4",
+        "id": 4,
         "titre": "UniversalFunk",
         "interprete": "DuoTeslar",
-        "lien": "UniversalFunk-DuoTeslar.mp3",
-        "lienIMG": "img4.jpg"
+        "lien_audio": "UniversalFunk-DuoTeslar.mp3",
+        "lien_img": "img4.jpg"
       },
       {
-        "id": "5",
+        "id": 5,
         "titre": "DiscoveringTheUnknown",
         "interprete": "GeorD",
-        "lien": "DiscoveringTheUnknown-GeorD.mp3",
-        "lienIMG": "img5.jpg"
+        "lien_audio": "DiscoveringTheUnknown-GeorD.mp3",
+        "lien_img": "img5.jpg"
       },
       {
-        "id": "6",
+        "id": 6,
         "titre": "DarkBlondeRises",
         "interprete": "LiVKi",
-        "lien": "DarkBlondeRises-LiVKi.mp3",
-        "lienIMG": "img6.jpg"
+        "lien_audio": "DarkBlondeRises-LiVKi.mp3",
+        "lien_img": "img6.jpg"
       },
       {
-        "id": "7",
+        "id": 7,
         "titre": "StarlightCinematicEpicMusic",
         "interprete": "NicoMaximilian",
-        "lien": "StarlightCinematicEpicMusic-NicoMaximilian.mp3",
-        "lienIMG": "img7.jpg"
+        "lien_audio": "StarlightCinematicEpicMusic-NicoMaximilian.mp3",
+        "lien_img": "img7.jpg"
       },
       {
-        "id": "8",
+        "id": 8,
         "titre": "ElectricHopes",
         "interprete": "PsyDen",
-        "lien": "ElectricHopes-PsyDen.mp3",
-        "lienIMG": "img8.jpg"
+        "lien_audio": "ElectricHopes-PsyDen.mp3",
+        "lien_img": "img8.jpg"
       },
       {
-        "id": "9",
+        "id": 9,
         "titre": "ERUTUF",
         "interprete": "SaMZIng",
         "lien": "ERUTUF-SaMZIng.mp3",
-        "lienIMG": "img9.jpg"
+        "lien_img": "img9.jpg"
       },
       {
-        "id": "10",
+        "id": 10,
         "titre": "Asteroids",
         "interprete": "SyunNakano",
-        "lien": "Asteroids-SyunNakano.mp3",
-        "lienIMG": "img10.jpg"
+        "lien_audio": "Asteroids-SyunNakano.mp3",
+        "lien_img": "img10.jpg"
       },
       {
-        "id": "11",
+        "id": 11,
         "titre": "TheWarWithin",
         "interprete": "TheARTISANSBeats",
-        "lien": "TheWarWithin-TheARTISANSBeats.mp3",
-        "lienIMG": "img11.jpg"
+        "lien_audio": "TheWarWithin-TheARTISANSBeats.mp3",
+        "lien_img": "img11.jpg"
       },
       {
-        "id": "12",
+        "id": 12,
         "titre": "Immersion",
         "interprete": "Vulpey",
-        "lien": "Immersion-Vulpey.mp3",
-        "lienIMG": "img12.jpg"
+        "lien_audio": "Immersion-Vulpey.mp3",
+        "lien_img": "img12.jpg"
       }
     ]
 }
