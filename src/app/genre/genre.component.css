@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'music';
+    src: url('../../assets/Musicografi.ttf');
+}
+@font-face {
+    font-family: 'jka';
+    src: url('../../assets/JKAbode-Demo.ttf');
+}
+@font-face {
+    font-family: 'neon';
+    src: url('../../assets/neon.otf');
+}
+@font-face {
+    font-family: 'slice';
+    src: url('../../assets/slice.ttf');
+}
+
+.container {
+    padding-top: 5vh;
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft JhengHei","PingFang TC","Lantinghei TC","Hiragino Kaku Gothic Pro","Meiryo","MS Gothic",sans-serif;
+}
+h1 {
+    padding-bottom: 5vh;
+    font-weight: bold;
+}
+h5 {
+    text-align: center;
+}
+* {
+    border: none;
+    background-color: transparent;
+}
+.col-12 {
+    padding: 0;
+}
