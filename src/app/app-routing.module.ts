@@ -5,13 +5,17 @@ import { ListComponent } from './list/list.component';
 import { BiblioComponent } from './biblio/biblio.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PlaylistComponent } from './playlist/playlist.component';
+import { GenreComponent } from './genre/genre.component';
+
 const routes: Routes = [
   { path: '', redirectTo: '/biblio', pathMatch: 'full' },
   { path: 'list', component: ListComponent },
   { path: 'biblio', component: BiblioComponent },
+  { path: 'genre', component: GenreComponent },
   { path: 'navbar', component: NavbarComponent },
   { path: 'playlist', component: PlaylistComponent }
 ];
+
 @NgModule({
   imports: [
     CommonModule,
@@ -20,4 +24,5 @@ const routes: Routes = [
   declarations: [],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

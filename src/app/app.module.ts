@@ -7,6 +7,7 @@ import { BiblioComponent } from './biblio/biblio.component';
 import { ListComponent } from './list/list.component';
 import { PlaylistComponent } from './playlist/playlist.component';
 import { AppRoutingModule } from './app-routing.module';
+import { GenreComponent } from './genre/genre.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AppRoutingModule } from './app-routing.module';
     NavbarComponent,
     BiblioComponent,
     ListComponent,
-    PlaylistComponent
+    PlaylistComponent,
+    GenreComponent
   ],
   imports: [
     BrowserModule,

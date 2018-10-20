@@ -2,6 +2,18 @@
     font-family: 'music';
     src: url('../../assets/Musicografi.ttf');
 }
+@font-face {
+    font-family: 'jka';
+    src: url('../../assets/JKAbode-Demo.ttf');
+}
+@font-face {
+    font-family: 'neon';
+    src: url('../../assets/neon.otf');
+}
+@font-face {
+    font-family: 'slice';
+    src: url('../../assets/slice.ttf');
+}
 * {
     z-index: 1000;
 }
@@ -24,7 +36,7 @@
     width: 4vh;
     margin-right: 1vw;
 }
-#biblioText, #listText {
+#biblioText, #listText, #genreText {
     color: white;
 }
 #biblioImg {
@@ -35,6 +47,15 @@
 }
 #stBiblio:hover #biblioImg {
     background-image: url('../../assets/musical-noteGold.png');
+}
+#genreImg {
+    background-image: url('../../assets/genreWhite.png');
+}
+#stGenre:hover #genreText {
+    color: goldenrod;
+}
+#stGenre:hover #genreImg {
+    background-image: url('../../assets/genreGold.png');
 }
 #listImg {
     background-image: url('../../assets/audiobookWhite.png');
@@ -59,16 +80,22 @@
 
 /*CSS de la barre horizontale (titre + bare de recherche)*/
 .row {
-    height: 10vh;
+    height: 20vh;
     background-color: black;
     color: goldenrod;
+}
+#rowSearch {
+    height: 10vh;
 }
 #titre, #search {
     text-align: center;
 }
 h1, h3, h5 {
     display: inline;
-    font-family: 'music';
+    font-family: 'jka';
+}
+h1 {
+    font-size: 3.4em;
 }
 #titre {
     display: flex;
@@ -81,6 +108,7 @@ h1, h3, h5 {
 }
 #inputsearch {
     display: none;
+    width: 30vw
 }
 #buttonsearch:hover, h4, h6, .menuImg {
     cursor: pointer;
@@ -95,4 +123,12 @@ h1, h3, h5 {
 #buttonsearch:hover {
     background-image: url("../../assets/searchGold.png");
 }
-
+@media (max-width: 540px) {
+    #titre {
+        background-color: red;
+        display: none;
+    }
+    #rowTitle {
+        height: 10vh;
+    }
+}
