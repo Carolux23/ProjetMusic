@@ -9,17 +9,15 @@
           <p class="card-title">{{music.titre}}</p>
 
           <div class="d-flex justify-content-around align-items-center">
-            <div class="btn-group dropup pos-f-t">
-              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
+            <div class="dropup pos-f-t">
+              <button type="" class="addTo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img id="addTo" src=".\src\assets\plus.png" alt="add">
               </button>
-              <div class="dropdown-menu" >
-                <ul *ngFor="let playList of list">
-                  <li id="{{playList.name}}">
-                    <h6>{{playList.name}}</h6>
-                  </li>
-                </ul>
+              <div class="dropdown-menu">
+                <p class="addTitle">Add to :</p>
+                <div *ngFor="let playList of list">
+                  <a id="pl" routerLink="/playlist" (click)="addTo(playList, music)">{{playList.name}}</a>
+                </div>
               </div>
             </div>
             <audio id="player" controls>

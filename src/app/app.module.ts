@@ -9,6 +9,7 @@ import { PlaylistComponent } from './playlist/playlist.component';
 import { AppRoutingModule } from './app-routing.module';
 import { GenreComponent } from './genre/genre.component';
 import { HttpClientModule } from '@angular/common/http';
+import { GenrePipe } from './genre.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     BiblioComponent,
     ListComponent,
     PlaylistComponent,
-    GenreComponent
+    GenreComponent,
+    GenrePipe
   ],
   imports: [
     BrowserModule,

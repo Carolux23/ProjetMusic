@@ -27,6 +27,18 @@ export class BddService {
     return this.http.get<Music>(playListsUrl);
   }
 
+  addTitleTo(playlist: Playlist, music: Music) {
+    // TODO: implement proper url for playlist
+    const pLUrl = 'http://localhost:3000/playList-01';
+    return this.http.post(pLUrl, music);
+  }
+
+  delTitle(music: Music) {
+    // TODO: implement proper url for playlist
+    const pLUrl = 'http://localhost:3000/playList-01/' + music.id;
+    return this.http.delete<Music>(pLUrl);
+    }
+
 
 
 

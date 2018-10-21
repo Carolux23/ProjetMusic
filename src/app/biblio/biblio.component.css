@@ -56,10 +56,34 @@ img {
 
 }
 
-#addTo:hover {
+.addTo{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.addTitle{
+    position: relative;
+    margin: 0;
+    padding-left: 1vh;
+    width: 100%;
+    color: #383737;
+}
+
+#pl{
+    margin-left: 4vh;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    color: GoldenRod;
+    padding-left: 1.5vh;
+}
+
+
+
+.addTo:hover {
 
     animation-name: bumps;
-    animation-duration: 250ms;
+    animation-duration: 200ms;
     animation-fill-mode: both;
     animation-direction: alternate;
     animation-iteration-count: 2;
@@ -70,6 +94,6 @@ img {
         transform: scale(1, 1);
     }
     to {
-        transform: scale(1.05, 1.05);
+        transform: scale(1.1, 1.1);
     }
 }

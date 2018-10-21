@@ -12,9 +12,9 @@
             <audio id="player" controls>
               <source src=".\src\assets\musics\{{music.lien_audio}}" type="audio/mpeg">
             </audio>
-            <div id="trash">
+            <a id="trash" (click)="deleteMusic(music)">
               <img src="../../assets/waste.png" id="waste">
-            </div>
+            </a>
           </div>
 
         </div>
