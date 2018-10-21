@@ -9,9 +9,10 @@
 h5 {
     text-align: center;
     font-weight: bold;
+    margin-bottom: 5vh;
 }
 #waste {
-    margin-right: 0.5vw;
+    margin-left: 0.3vw;
     width: 2.5vw;
     float: right;
 }
@@ -20,7 +21,14 @@ h5 {
 }
 .btn {
     background-color: black;
-    margin-left: 0.5vw;
+    color:white;
+    margin-left: 0.2vw;
+    font-weight: bold;
+    border: solid 2px black;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
 }
 .card {
     border: solid 3px goldenrod;
@@ -40,8 +48,22 @@ h5 {
     transition: 0.5s;
 }
 .img-play {
+    width: 8.15vw;
+}
+#haut-gche {
+    border-radius: 13px 0px 0px 0px;
+}
+#haut-dte {
+    border-radius: 0px 13px 0px 0px;
+}
+#bas-gche, #bas-dte {
+    border-radius: 0px 0px 0px 0px;;
+}
+#mosaique {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
     border-bottom: solid 3px goldenrod;
-    border-radius: 15px 15px 0px 0px;
 }
 .ajouter {
     display: flex;

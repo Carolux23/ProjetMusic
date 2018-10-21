@@ -2,10 +2,15 @@
   <div class="row">
     <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let maList of list">
       <div class="card" style="width: 80%;">
-        <img class="card-img-top img-play" src="../../assets/musique.jpg" alt="Card image cap">
+        <div id="mosaique">
+          <img class="card-img-top img-play" id="haut-gche" src=".\src\assets\musics\{{playList[0].lien_img}}">
+          <img class="card-img-top img-play" id="haut-dte" src=".\src\assets\musics\{{playList[1].lien_img}}">
+          <img class="card-img-top img-play" id="bas-gche" src=".\src\assets\musics\{{playList[2].lien_img}}">
+          <img class="card-img-top img-play" id="bas-dte" src=".\src\assets\musics\{{playList[3].lien_img}}">
+        </div>
         <div class="card-body">
           <h5 class="card-title">{{maList.name}}</h5>
-          <a class="btn btn-dark" routerLink="/playlist" (click)="getPlayList()" >Voir {{maList.name}} {{maList.id}}</a>
+          <a class="btn btn-dark" routerLink="/playlist" (click)="getPlayList()" >Voir {{maList.name}}</a>
           <img src="../../assets/waste.png" id="waste">
         </div>
       </div>
