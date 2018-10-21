@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Music } from '../music';
 import { BddService } from '../bdd.service';
+import { Playlist } from '../playlist';
 
 @Component({
   selector: 'app-biblio',
@@ -10,6 +11,7 @@ import { BddService } from '../bdd.service';
 export class BiblioComponent implements OnInit {
 
   musicTable: Music[];
+  list: Playlist[];
 
   constructor(private bdd: BddService) { }
 
@@ -24,8 +26,19 @@ export class BiblioComponent implements OnInit {
     });
     }
 
+    getList() {
+      const getUrl = this.bdd.getList();
+      getUrl.subscribe((data: any) => {
+      this.list = data;
+      console.log('list obtained from json-server');
+    }, (error) => {
+      this.bdd.handleError(error);
+  });
+  }
+
   ngOnInit() {
     this.getBiblio();
+    this.getList() ;
   }
 
 }
