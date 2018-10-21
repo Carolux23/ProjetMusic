@@ -9,32 +9,24 @@
           <p class="card-title">{{music.titre}}</p>
 
           <div class="d-flex justify-content-around align-items-center">
-            <audio id="player" controls>
-              <source src=".\src\assets\musics\{{music.lien_audio}}" type="audio/mpeg">
-            </audio>
-
-            <div class="pos-f-t ">
-              <div id="addTo" type="button" data-toggle="collapse" data-target="#addToPlaylist" aria-controls="addToPlaylist"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <div class="btn-group dropup pos-f-t">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
                 <img id="addTo" src=".\src\assets\plus.png" alt="add">
-              </div>
-            </div>
-
-          </div>
-          <div class="collapse" id="addToPlaylist">
-              <div class="card-title">Add {{music.titre}} to</div> 
-              <ul>
-                  <li>
-                    <h6>myPlaylist 1</h6>
-                  </li>
-                  <li>
-                    <h6>myPlaylist 2</h6>
-                  </li>
-                  <li>
-                    <h6>myPlaylist 3</h6>
+              </button>
+              <div class="dropdown-menu" >
+                <ul *ngFor="let playList of list">
+                  <li id="{{playList.name}}">
+                    <h6>{{playList.name}}</h6>
                   </li>
                 </ul>
               </div>
+            </div>
+            <audio id="player" controls>
+              <source src=".\src\assets\musics\{{music.lien_audio}}" type="audio/mpeg">
+            </audio>
+          </div>
+
 
         </div>
       </div>

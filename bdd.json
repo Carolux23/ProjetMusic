@@ -101,7 +101,7 @@
     "list" :[
       {
         "id": 1,
-        "name": "playList-01",
+        "name": "pl-01",
         "lien": "http://localhost:3000/playList-01"
       },
       {
