@@ -53,36 +53,46 @@ button:hover {
 }
 #stBiblio:hover #biblioText {
     color: goldenrod;
+    cursor: pointer;
 }
 #stBiblio:hover #biblioImg {
     background-image: url('../../assets/musical-noteGold.png');
+    cursor: pointer;
 }
 #genreImg {
     background-image: url('../../assets/genreWhite.png');
 }
 #stGenre:hover #genreText {
     color: goldenrod;
+    cursor: pointer;
 }
 #stGenre:hover #genreImg {
     background-image: url('../../assets/genreGold.png');
+    cursor: pointer;
 }
 #listImg {
     background-image: url('../../assets/audiobookWhite.png');
 }
 #stList:hover #listText {
     color: goldenrod;
+    cursor: pointer;
 }
 #stList:hover #listImg {
     background-image: url('../../assets/audiobookGold.png');
+    cursor: pointer;
 }
 #plusImg {
     background-image: url('../../assets/plusWhite.png');
 }
 #plusImg:hover {
     background-image: url('../../assets/plusGold.png');
+    cursor: pointer;
 }
 .sousSousTitre {
     color: white;
+}
+.sousSousTitre:hover {
+    cursor: pointer;
 }
 
 
