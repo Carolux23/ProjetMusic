@@ -3,6 +3,7 @@
     justify-content: center;
 }
 
+/* General style for the card*/
 .card {
     background-color: white;
     margin: 2vh;
@@ -18,10 +19,13 @@
 .card-body {
     padding: 0;
 }
+
+/* fixing the images's size */
 img {
     width: 100%;
     height: auto;
 }
+
 .card-artist {
     position: relative;
     margin: 0;
@@ -37,18 +41,23 @@ img {
     color: GoldenRod;
     padding-left: 1.5vh;
 }
+
+/* Menu CSS */
 #player {
     width: 80%;
 }
+
 .pos-f-t {
     width: 15%;
     z-index: 2;
 }
+
 .addTo{
     margin: 0;
     padding: 0;
     border: none;
 }
+
 .addTitle{
     position: relative;
     margin: 0;
@@ -56,6 +65,7 @@ img {
     width: 100%;
     color: #383737;
 }
+
 #pl{
     margin-left: 4vh;
     position: relative;
@@ -64,6 +74,8 @@ img {
     color: GoldenRod;
     padding-left: 1.5vh;
 }
+
+/* Effect when mouseover the "plus" */
 .addTo:hover {
     animation-name: bumps;
     animation-duration: 200ms;
@@ -80,7 +92,7 @@ img {
     }
 }
 
-/*CSS de la barre de recherche, le bouton appel en JS la barre étant hiden par défault */
+/* Search bar CSS, by default the input is hidden and calling the JS function on click */
 #inputsearch {
     display: none;
     width: 30vw
@@ -123,4 +135,31 @@ img {
     left: 0;
     background-color:  #383737;
     padding: 8vh;
+}
+
+/* Go to top button style */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 15vh;
+    right: 1vw; 
+    z-index: 300;
+    border: none;
+    outline: none; 
+    background-color: black;
+    color: white; 
+    cursor: pointer; 
+    border-radius: 10px; 
+    font-size: 18px;
+    opacity: 0.4;
+    font-family: arial;
+    font-size: 2em;
+    width: 4vw;
+    height: 8vh;
+    margin-bottom: 2vh;
+}
+
+#myBtn:hover {
+    background-color: #555;
+    opacity: 1;
 }

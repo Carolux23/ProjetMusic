@@ -1,23 +1,26 @@
 <main class="container-fluid">
   
+  <!--Search bar with input collapse-->
   <div id="search-general">
     <div class="row" id="row-search">
         <div id="search">
-            <input id="inputsearch"  type="text" [(ngModel)]="searchText" placeholder="Search">
+            <input id="inputsearch"  type="text" [(ngModel)]="searchText" placeholder="Rechercher un titre ou un artiste">
             <div id="buttonsearch" (click)="displaySearch()"></div>
         </div>
     </div>
   </div>
   
   <div class="row" id="myBiblio">
+    <!--ngFor to display music cards on screen and search pipe to aplly filters when searching title or artist-->
     <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let music of musicTable | searchPipe : searchText">
       <div class="card">
         <div class="card-body">
-
+          <!--linking BDD's images and music's titles and artists-->
           <img class="card-img-top" src=".\src\assets\musics\{{music.lien_img}}" alt="Album-image">
           <h5 class="card-artist">{{music.interprete}}</h5>
           <p class="card-title">{{music.titre}}</p>
 
+          <!--buttons in the card-->
           <div class="d-flex justify-content-around align-items-center">
             <div class="dropup pos-f-t">
               <button type="" class="addTo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -30,6 +33,8 @@
                 </div>
               </div>
             </div>
+
+            <!--audio player-->
             <audio id="player" controls>
               <source src=".\src\assets\musics\{{music.lien_audio}}" type="audio/mpeg">
             </audio>
@@ -40,4 +45,6 @@
     </div>
   </div>
 
+  <!--button to go to the page's top quickly (appearing on scroll)-->
+  <button (click)="topFunction()" id="myBtn" title="Go to top">&#x21E7;</button>
 </main>

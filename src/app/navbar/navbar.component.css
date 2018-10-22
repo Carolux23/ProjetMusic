@@ -12,7 +12,7 @@
 
   
 
-/*CSS du bouton dropdown du menu*/
+/* Dropdown button's CSS*/
 .dropdown-toggle::after {
     display: none;
 }
@@ -27,7 +27,7 @@ button:hover {
     color: black;
 }
 
-/*CSS du menu déroulant et des sous-menus intégrés*/
+/* Menu expanding and collapsing CSS */
 .dropdown-menu, .dropdown-item {
     background-color: black;
     width: 25vw;
@@ -86,7 +86,7 @@ button:hover {
 }
 
 
-/*CSS de la barre horizontale noire*/
+/* horizontal black navbar CSS */
 #rowHead {
     height: 10vh;
     background-color: black;
@@ -96,8 +96,6 @@ button:hover {
 
 
 /* title animation*/
-
-
 svg { 
     display: block;
     font: 8vh 'quantum';
@@ -112,32 +110,32 @@ svg {
     stroke-dasharray: 6% 29%;
     stroke-width: 2px;
     stroke-dashoffset: 0%;
-    animation: stroke-offset 15s infinite linear;
+    animation: stroke-offset 25s infinite linear;
 }
 
 .text-copy:nth-child(1){
 	stroke: white;
-	animation-delay: -3s;
+	animation-delay: -5s;
 }
 
 .text-copy:nth-child(2){
 	stroke: gold;
-	animation-delay: -6s;
+	animation-delay: -10s;
 }
 
 .text-copy:nth-child(3){
 	stroke: GoldenRod;
-	animation-delay: -9s;
+	animation-delay: -15s;
 }
 
 .text-copy:nth-child(4){
 	stroke: Lightgrey;
-	animation-delay: -12s;
+	animation-delay: -20s;
 }
 
 .text-copy:nth-child(5){
 	stroke: #FDB731;
-	animation-delay: -15s;
+	animation-delay: -25s;
 }
 
 @keyframes stroke-offset{
