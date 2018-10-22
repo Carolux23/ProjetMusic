@@ -1,54 +1,60 @@
 <div class="container-fluid">
-  <div id="rowTitle" class="row">
+  <div id="rowHead" class="row">
 
-    <div id="titre" class="col-12">
-      <span> <h1>S C A D<h3> _music</h3></h1> </span>
-    </div>
+    <div class="col-1">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img id="iconMenu" src="../../assets/menu-buttonWhite.png">
+        </button>
 
-    <div class="col-lg-3 col-md-4 col-6">
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
-      <div class="pos-f-t">
-        <nav class="navbar navbar-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="p-4">
-            <div id="stBiblio" class="sousTitre">
+          <div class="row" id="stBiblio">
+            <div class="col-2">
               <div id="biblioImg" class="menuImg" routerLink="/biblio"></div>
-              <h4 id="biblioText" routerLink="/biblio">Bibliothèque</h4>
             </div>
-            <div id="stGenre" class="sousTitre">
-                <div id="genreImg" class="menuImg" routerLink="/genre"></div>
-                <h4 id="genreText" routerLink="/genre">Genre</h4>
-              </div>
-            <div id="stList" class="sousTitre">
+            <div class="col-8">
+              <h3 class="dropdown-item" id="biblioText" routerLink="/biblio">Bibliothèque</h3>
+            </div>
+          </div>
+          
+          <div class="row" id="stGenre">
+            <div class="col-2">
+              <div id="genreImg" class="menuImg" routerLink="/genre"></div>
+            </div>
+            <div class="col-8">
+              <h3 class="dropdown-item" id="genreText" routerLink="/genre">Genre</h3>
+            </div>
+          </div>
+
+          <div class="row" id="stList">
+            <div class="col-2">
               <div id="listImg" class="menuImg" routerLink="/list"></div>
-              <h4 id="listText" routerLink="/list">Playlist</h4>
+            </div>
+            <div class="col-7">
+              <h3 class="dropdown-item" id="listText" routerLink="/list">Playlist</h3>
+            </div>
+            <div class="col-2">
               <div id="plusImg" class="menuImg"></div>
             </div>
-            <ul>
-              <li>
-                <h6 class="sousSousTitre" routerLink="/playlist">myPlaylist 1</h6>
-              </li>
-              <li>
-                <h6 class="sousSousTitre">myPlaylist 2</h6>
-              </li>
-              <li>
-                <h6 class="sousSousTitre">myPlaylist 3</h6>
-              </li>
-            </ul>
-            <span class="text-muted">Une idée orignale de SCAD_music</span>
           </div>
-        </div>
-        
-      </div>
 
+          <div class="row">
+            <ul>
+              <li><h5 class="sousSousTitre" routerLink="/playlist">myPlaylist 1</h5></li>
+              <li><h5 class="sousSousTitre" routerLink="/playlist">myPlaylist 2</h5></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
     </div>
 
-   
+    <div class="col-10">
+      <div id="titre">
+        <span> <h1 class="titreText" id="titreTextH1">SCAD</h1><h3 class="titreText" id="titreTextH3"> _music</h3> </span>
+      </div>
+    </div>
 
   </div>
 </div>
