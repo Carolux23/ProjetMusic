@@ -10,6 +10,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { GenreComponent } from './genre/genre.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GenrePipe } from './genre.pipe';
+import { SearchPipe } from './search.pipe';
+import { FormsModule }   from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +22,8 @@ import { GenrePipe } from './genre.pipe';
     ListComponent,
     PlaylistComponent,
     GenreComponent,
-    GenrePipe
+    GenrePipe,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
@@ -27,6 +31,7 @@ import { GenrePipe } from './genre.pipe';
     BrowserModule,
     // import HttpClientModule after BrowserModule.
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
