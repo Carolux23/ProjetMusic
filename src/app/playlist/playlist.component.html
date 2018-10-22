@@ -1,24 +1,37 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>Hover Effect Ideas | Set 2</title>
+  <meta name="description" content="Hover Effect Ideas: Inspiration for subtle hover effects" />
+  <meta name="keywords" content="hover effect, inspiration, grid, thumbnail, transition, subtle, web design" />
+  <meta name="author" content="Codrops" />
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,500,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/set2.css" />
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+</head>
+
 <main class="container-fluid">
   <div class="row">
-    <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let music of content">
-      <div class="card">
-        <div class="card-body">
-          <img class="card-img-top" src=".\src\assets\musics\{{music.lien_img}}" alt="Album-image">
 
-          <h5 class="card-artist">{{music.interprete}}</h5>
-          <p class="card-title">{{music.titre}}</p>
-
-          <div class="d-flex justify-content-around align-items-center">
-            <audio id="player" controls>
-              <source src=".\src\assets\musics\{{music.lien_audio}}" type="audio/mpeg">
-            </audio>
-            <a id="trash" (click)="deleteMusic(music)">
-              <img src="../../assets/waste.png" id="waste">
-            </a>
-          </div>
-
-        </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-12" *ngFor="let music of content">
+      <div class="grid">
+        <figure class="effect-phoebe">
+          <img src="../../assets/musics/{{music.lien_img}}" alt="img03" width="450" height="240"/>
+          <figcaption>
+            <h2>{{music.interprete}} <span>{{music.titre}}</span></h2>
+            <p>
+              <a href="#"><i class="fa fa-fw fa-play"></i></a>
+              <a href="#"><i class="fa fa-fw fa-none"></i></a>
+              <a href="#"><i class="fa fa-fw fa-plus"></i></a>
+            </p>
+          </figcaption>			
+        </figure>
       </div>
     </div>
+
   </div>
 </main>
