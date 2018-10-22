@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Music } from '../music';
 import { BddService } from '../bdd.service';
 import { Playlist } from '../playlist';
@@ -11,13 +11,14 @@ import { $ } from 'protractor';
 })
 export class BiblioComponent implements OnInit {
 
+  // variables
   musicTable: Music[];
   list: Playlist[];
   display = 'none';
 
   constructor(private bdd: BddService) { }
 
-  // collapse search bar
+  // expand search bar
   displaySearch() {
     if (this.display === 'none') {
       document.getElementById('inputsearch').style.display = 'unset';
@@ -50,6 +51,7 @@ export class BiblioComponent implements OnInit {
     });
   }
 
+  // Add music to playlist
   addTo(playlist: Playlist, music: Music) {
       this.bdd. addTitleTo(playlist, music).subscribe((data: any) => {
         console.log('adding title to playlist ' + playlist.name);
@@ -57,6 +59,25 @@ export class BiblioComponent implements OnInit {
         this.bdd.handleError(error);
       });
   }
+
+
+  // Got to top quickly function (appearing when scrolling)
+  @HostListener("window:scroll", [])
+  onWindowScroll() {this.scrollFunction()};
+
+  scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+      } else {
+          document.getElementById("myBtn").style.display = "none";
+      }
+  }
+
+// When the user clicks on the button, scroll to the top of the document
+  topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  } 
 
 
   ngOnInit() {

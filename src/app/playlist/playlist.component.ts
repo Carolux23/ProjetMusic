@@ -10,11 +10,13 @@ import { Playlist } from '../playlist';
 })
 export class PlaylistComponent implements OnInit {
 
+  // Variables
   content: Music[];
   playListNo: number;
 
   constructor(private bdd: BddService) { }
 
+  // To display playlist
   getPlayList() {
     console.log('looking for that playList');
     const getUrl = this.bdd.getPlayList();

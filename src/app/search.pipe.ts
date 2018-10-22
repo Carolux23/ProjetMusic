@@ -9,6 +9,7 @@ import { Music } from './music';
 
 export class SearchPipe implements PipeTransform {
 
+// Pipe for search bar : research with filters titles or artists  
  transform(items: Music[], searchText: string): any[] {
   if(!items) return [];
   if(!searchText) return items;

@@ -1,3 +1,4 @@
+/* General*/
 .container-fluid {
     background-color:  #383737;
     padding: 5vw;
@@ -9,6 +10,8 @@ h5 {
     font-weight: bold;
     margin-bottom: 5vh;
 }
+
+/* "Delete" button style*/
 #waste {
     margin-left: 0.3vw;
     width: 2.5vw;
@@ -17,6 +20,8 @@ h5 {
 #waste {
     cursor: pointer;
 }
+
+/* "view" button style */
 .btn {
     background-color: black;
     color:white;
@@ -28,6 +33,8 @@ h5 {
     background-color: white;
     color: black;
 }
+
+/* Card design */
 .card {
     border: solid 3px goldenrod;
     border-radius: 15px;
@@ -37,6 +44,7 @@ h5 {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
+/* Card animation */
 .card:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
@@ -48,6 +56,8 @@ h5 {
 .card-body {
     height: 15vh;
 }
+
+/* Manage mosaic img layout */
 .img-play {
     width: 50%;
     float: left;
@@ -64,6 +74,8 @@ h5 {
 #mosaique {
     border-bottom: solid 3px goldenrod;
 }
+
+/* "Add" card style */
 .ajouter {
     display: flex;
     align-items: center;

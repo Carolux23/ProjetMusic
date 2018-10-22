@@ -10,6 +10,7 @@ import { Music } from '../music';
 })
 export class ListComponent implements OnInit {
 
+  // Variables
   list: Playlist[] = [];
   playList: Music[] = [
     {

@@ -1,6 +1,10 @@
 <div class="container-fluid">
   <div class="row">
+
+    <!--ngFor to display playlists-->
     <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let maList of list">
+
+      <!--Bootstrap card, with the first four images of the playlist-->
       <div class="card" style="width: 80%;">
         <div id="mosaique">
           <img class="card-img-top img-play" id="haut-gche" src=".\src\assets\musics\{{playList[0].lien_img}}">
@@ -16,7 +20,7 @@
       </div>
     </div>
   
-
+    <!--The "add" card, to create a new playlist-->
     <div class="col-3">
       <div class="card ajouter" style="width: 80%;">
         <img class="card-img-top img-add" src="../../assets/plus.png" alt="Card image cap">
