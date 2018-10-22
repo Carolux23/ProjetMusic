@@ -5,14 +5,13 @@
     width: 100%;
     padding: 1vh;
     z-index: 100;
+    margin: 0;
 }
-.col-3{
+.col-3, .col-6{
     display: flex;
     justify-content: center;
-
+    align-items: center;
 }
-.col-6{
-    display: flex;
-    justify-content: center;
-    
+p, h5 {
+    margin: 0;
 }
