@@ -28,7 +28,7 @@ import { OnPlayComponent } from './on-play/on-play.component';
     GenreComponent,
     GenrePipe,
 
-    SearchPipe
+    SearchPipe,
     OnPlayComponent
   ],
   imports: [
