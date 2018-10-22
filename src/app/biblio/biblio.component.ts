@@ -13,8 +13,20 @@ export class BiblioComponent implements OnInit {
 
   musicTable: Music[];
   list: Playlist[];
+  display = 'none';
 
   constructor(private bdd: BddService) { }
+
+  // collapse search bar
+  displaySearch() {
+    if (this.display === 'none') {
+      document.getElementById('inputsearch').style.display = 'unset';
+      this.display = 'unset';
+    } else if (this.display === 'unset') {
+      document.getElementById('inputsearch').style.display = 'none';
+      this.display = 'none';
+    }
+  }
 
   // This method collects the biblio data base from json-server
   getBiblio() {

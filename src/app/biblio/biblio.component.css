@@ -97,3 +97,24 @@ img {
         transform: scale(1.1, 1.1);
     }
 }
+#search {
+    display: flex;
+    justify-content: flex-end;
+}
+#inputsearch {
+    display: none;
+    width: 30vw
+}
+#buttonsearch:hover, h4, h6, .menuImg {
+    cursor: pointer;
+}
+#buttonsearch {
+    background-image: url("../../assets/searchGrey.png");
+    background-size: 100%;
+    width: 6vh;
+    height: 6vh;
+    margin-right: 1vw;
+}
+#buttonsearch:hover {
+    background-image: url("../../assets/searchGold.png");
+}
