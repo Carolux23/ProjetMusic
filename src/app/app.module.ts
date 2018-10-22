@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { GenreComponent } from './genre/genre.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GenrePipe } from './genre.pipe';
+import { OnPlayComponent } from './on-play/on-play.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { GenrePipe } from './genre.pipe';
     ListComponent,
     PlaylistComponent,
     GenreComponent,
-    GenrePipe
+    GenrePipe,
+    OnPlayComponent
   ],
   imports: [
     BrowserModule,
