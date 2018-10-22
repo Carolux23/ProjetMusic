@@ -1,10 +1,6 @@
-main {
-    background-color:  #383737;
-    height: 100%;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    z-index: -1;
-    padding: 5vh 5vw 5vh 5vw;
+.col-12 {
+    display: flex;
+    justify-content: center;
 }
 
 .card {
@@ -19,16 +15,13 @@ main {
     box-shadow: 6px 6px 6px black;
     overflow: hidden;
 }
-
 .card-body {
     padding: 0;
 }
-
 img {
     width: 100%;
     height: auto;
 }
-
 .card-artist {
     position: relative;
     margin: 0;
@@ -37,7 +30,6 @@ img {
     width: 100%;
     color: #383737;
 }
-
 .card-title {
     position: relative;
     margin: 0;
@@ -45,17 +37,13 @@ img {
     color: GoldenRod;
     padding-left: 1.5vh;
 }
-
 #player {
     width: 80%;
 }
-
 .pos-f-t {
     width: 15%;
     z-index: 2;
-
 }
-
 .addTo{
     margin: 0;
     padding: 0;
@@ -68,7 +56,6 @@ img {
     width: 100%;
     color: #383737;
 }
-
 #pl{
     margin-left: 4vh;
     position: relative;
@@ -77,18 +64,13 @@ img {
     color: GoldenRod;
     padding-left: 1.5vh;
 }
-
-
-
 .addTo:hover {
-
     animation-name: bumps;
     animation-duration: 200ms;
     animation-fill-mode: both;
     animation-direction: alternate;
     animation-iteration-count: 2;
 }
-
 @keyframes bumps {
     from {
         transform: scale(1, 1);
@@ -97,10 +79,8 @@ img {
         transform: scale(1.1, 1.1);
     }
 }
-#search {
-    display: flex;
-    justify-content: flex-end;
-}
+
+/*CSS de la barre de recherche, le bouton appel en JS la barre étant hiden par défault */
 #inputsearch {
     display: none;
     width: 30vw
@@ -117,4 +97,30 @@ img {
 }
 #buttonsearch:hover {
     background-image: url("../../assets/searchGold.png");
+}
+#row-search {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+}
+#search {
+    display: flex;
+    margin-right: 1vw;
+}
+#search-general {
+    position: fixed;
+    top: 0;
+    left:50vw;
+    width: 50vw;
+    z-index: 150;  
+}
+#myBiblio {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    background-color:  #383737;
+    padding: 8vh;
 }

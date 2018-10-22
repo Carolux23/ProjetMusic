@@ -1,9 +1,8 @@
 .container-fluid {
     background-color:  #383737;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    z-index: -1;
-    padding: 5vh 5vw 5vh 5vw;
+    padding: 5vw;
+    position: absolute;
+    top: 10vh;
 }
 h5 {
     text-align: center;
