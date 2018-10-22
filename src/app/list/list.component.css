@@ -1,6 +1,5 @@
 .container-fluid {
     background-color:  #383737;
-    height: 100%;
     padding-top: 5vh;
     padding-bottom: 5vh;
     z-index: -1;
@@ -47,8 +46,12 @@ h5 {
 .card:not(:hover) { 
     transition: 0.5s;
 }
+.card-body {
+    height: 15vh;
+}
 .img-play {
-    width: 8.15vw;
+    float: left;
+    width: 50%;
 }
 #haut-gche {
     border-radius: 13px 0px 0px 0px;
@@ -60,9 +63,7 @@ h5 {
     border-radius: 0px 0px 0px 0px;;
 }
 #mosaique {
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
+
     border-bottom: solid 3px goldenrod;
 }
 .ajouter {
