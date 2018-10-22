@@ -48,7 +48,8 @@ h5 {
     transition: 0.5s;
 }
 .img-play {
-    width: 8.15vw;
+    width: 50%;
+    float: left;
 }
 #haut-gche {
     border-radius: 13px 0px 0px 0px;
@@ -60,9 +61,6 @@ h5 {
     border-radius: 0px 0px 0px 0px;;
 }
 #mosaique {
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
     border-bottom: solid 3px goldenrod;
 }
 .ajouter {
