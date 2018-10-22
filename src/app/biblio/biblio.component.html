@@ -1,18 +1,20 @@
 <main class="container-fluid">
-  <div class="row" id="row-search">
-      <div id="search" class="col-lg-9 col-md-8 col-6">
-          <form class="form-inline">
+  
+  <div id="search-general">
+    <div class="row" id="row-search">
+        <div id="search">
             <input id="inputsearch" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <div id="buttonsearch" (click)="displaySearch()"></div>
-          </form>
         </div>
+    </div>
   </div>
-  <div class="row">
+
+  <div class="row" id="myBiblio">
     <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let music of musicTable">
       <div class="card">
         <div class="card-body">
-          <img class="card-img-top" src=".\src\assets\musics\{{music.lien_img}}" alt="Album-image">
 
+          <img class="card-img-top" src=".\src\assets\musics\{{music.lien_img}}" alt="Album-image">
           <h5 class="card-artist">{{music.interprete}}</h5>
           <p class="card-title">{{music.titre}}</p>
 
@@ -33,13 +35,9 @@
             </audio>
           </div>
 
-
         </div>
       </div>
-
-     
     </div>
-
-
   </div>
+
 </main>

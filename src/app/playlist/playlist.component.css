@@ -1,10 +1,9 @@
 main {
     background-color: #383737;
     height: 100%;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    z-index: -1;
-    padding: 5vh 5vw 5vh 5vw;
+    padding: 5vw;
+    position: absolute;
+    top: 10vh;
 }
 
 .card {
