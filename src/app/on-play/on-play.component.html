@@ -1,7 +1,12 @@
 <div id="rowPlay" class="row">
-  <div class="col-3">Titre<br>Interprete</div>
-  <div class="col-3">
-    <source src="electro.png" alt="img">
+  <div class="col-4">
+    <div>
+      <h5 class="row">Interprète{{music.interprete}}</h5>
+      <p class="row">Titre{{music.titre}}</p>
+    </div>
+  </div>
+  <div class="col-2">
+    <img src=".\src\assets\musics\{{music.lien_img}}" alt="Album-image">
   </div>
   <div class="col-6">
     <audio id="player" controls>
