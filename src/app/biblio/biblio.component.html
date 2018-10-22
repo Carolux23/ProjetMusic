@@ -3,14 +3,14 @@
   <div id="search-general">
     <div class="row" id="row-search">
         <div id="search">
-            <input id="inputsearch" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <input id="inputsearch"  type="text" [(ngModel)]="searchText" placeholder="Search">
             <div id="buttonsearch" (click)="displaySearch()"></div>
         </div>
     </div>
   </div>
-
+  
   <div class="row" id="myBiblio">
-    <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let music of musicTable">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let music of musicTable | searchPipe : searchText">
       <div class="card">
         <div class="card-body">
 

@@ -1,25 +1,16 @@
 @font-face {
-    font-family: 'music';
-    src: url('../../assets/Musicografi.ttf');
+    font-family: 'quantum';
+    src: url('../../assets/Quantum.otf');
 }
-@font-face {
-    font-family: 'jka';
-    src: url('../../assets/JKAbode-Demo.ttf');
-}
-@font-face {
-    font-family: 'neon';
-    src: url('../../assets/neon.otf');
-}
-@font-face {
-    font-family: 'slice';
-    src: url('../../assets/slice.ttf');
-}
+
 * {
     z-index: 100;
 }
 .container-fluid {
     position: fixed;
 }
+
+  
 
 /*CSS du bouton dropdown du menu*/
 .dropdown-toggle::after {
@@ -101,13 +92,54 @@ button:hover {
     background-color: black;
     color: goldenrod;
 }
-#titre {
-    text-align: center;
-    font-family: 'jka';
+
+
+
+/* title animation*/
+
+
+svg { 
+    display: block;
+    font: 8vh 'quantum';
+    height: 8vh;
+    margin: 0;
+    padding: 0;
 }
-.titreText {
-    display: inline;
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 2px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 15s infinite linear;
 }
-#titreTextH1 {
-    font-size: 4em;
+
+.text-copy:nth-child(1){
+	stroke: white;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(2){
+	stroke: gold;
+	animation-delay: -6s;
+}
+
+.text-copy:nth-child(3){
+	stroke: GoldenRod;
+	animation-delay: -9s;
+}
+
+.text-copy:nth-child(4){
+	stroke: Lightgrey;
+	animation-delay: -12s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -15s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
 }
