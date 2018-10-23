@@ -17,12 +17,12 @@ export class GenreComponent implements OnInit {
 
   constructor(private router: Router,   private bdd: BddService) { }
 
-  displayGenre(myGenre:string) {
+  displayGenre(myGenre: string) {
     const getUrl = this.bdd.getBib();
     this.genreTable = [];
     getUrl.subscribe((data: any) => {
       console.log(data[2].genre);
-      for (var i:number=0; i<data.length; i++) {
+      for (let i = 0; i < data.length; i++) {
         if (data[i].genre === myGenre) {
           this.genreTable.push(data[i]);
           console.log('chopé');
@@ -48,7 +48,7 @@ export class GenreComponent implements OnInit {
   // Add music to playlist
   addTo(playlist: Playlist, music: Music) {
       this.bdd. addTitleTo(playlist, music).subscribe((data: any) => {
-      //  console.log('adding title to playlist ' + playlist.nom);
+
       }, (error) =>{
         this.bdd.handleError(error);
       });
@@ -56,14 +56,14 @@ export class GenreComponent implements OnInit {
 
 
   // Got to top quickly function (appearing when scrolling)
-  @HostListener("window:scroll", [])
-  onWindowScroll() {this.scrollFunction()};
+  @HostListener('window:scroll', [])
+  onWindowScroll() { this.scrollFunction(); }
 
   scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById("myBtn").style.display = "block";
+          document.getElementById('myBtn').style.display = 'block';
       } else {
-          document.getElementById("myBtn").style.display = "none";
+          document.getElementById('myBtn').style.display = 'none';
       }
   }
 

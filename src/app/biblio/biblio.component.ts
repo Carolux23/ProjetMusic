@@ -17,7 +17,6 @@ export class BiblioComponent implements OnInit {
   musicTable: Music[];
   list: List[];
   display = 'none';
-  inputText:string = '';
 
   constructor(private bdd: BddService,private player:PlayerService) { }
 

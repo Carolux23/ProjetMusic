@@ -2,29 +2,32 @@
   <div class="row">
 
     <!--ngFor to display playlists-->
-    <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let maList of list">
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12" *ngFor="let maList of list">
 
       <!--Bootstrap card, with the first four images of the playlist-->
-      <div class="card" style="width: 80%;">
+      <div id="myCard">
         <div id="mosaique">
-          <img class="card-img-top img-play" id="haut-gche" src=".\src\assets\musics\{{playList[0].lien_img}}">
-          <img class="card-img-top img-play" id="haut-dte" src=".\src\assets\musics\{{playList[1].lien_img}}">
-          <img class="card-img-top img-play" id="bas-gche" src=".\src\assets\musics\{{playList[2].lien_img}}">
-          <img class="card-img-top img-play" id="bas-dte" src=".\src\assets\musics\{{playList[3].lien_img}}">
+          <img class="card-img-top img-play" id="haut-gche" src=".\src\assets\musics\img{{numero1}}.jpg">
+          <img class="card-img-top img-play" id="haut-dte" src=".\src\assets\musics\img{{numero2}}.jpg">
+          <img class="card-img-top img-play" id="bas-gche" src=".\src\assets\musics\img{{numero3}}.jpg">
+          <img class="card-img-top img-play" id="bas-dte" src=".\src\assets\musics\img{{numero4}}.jpg">
         </div>
-        <div class="card-body">
-          <h5 class="card-title">{{maList.nom}}</h5>
-          <a class="btn btn-dark" routerLink="/playlist" (click)="getPlayList(maList.id)" >Voir {{maList.nom}}</a>
-          <img src="../../assets/waste.png" id="waste">
+          <div id="text-img">
+            <div id="inside-text-img">
+              <h5>{{maList.nom}}</h5>
+              <img src="../../assets/eye-white.png" id="eye" routerLink="/playlist" (click)="getPlayList(maList.id)" >
+              <img src="../../assets/waste-white.png" id="waste">
+          </div>
         </div>
       </div>
     </div>
   
     <!--The "add" card, to create a new playlist-->
-    <div class="col-3">
-      <div class="card ajouter" style="width: 80%;">
+    <div class="col-4">
+      <div class="plusCard ajouter" style="width: 100%;">
         <img class="card-img-top img-add" src="../../assets/plus.png" alt="Card image cap">
       </div>
     </div>
+
   </div>
 </div>
