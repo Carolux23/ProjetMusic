@@ -4,6 +4,7 @@ import { BddService } from '../bdd.service';
 import { Playlist } from '../playlist';
 import { $ } from 'protractor';
 import { List } from '../list';
+import { PlayerService } from '../player.service';
 
 @Component({
   selector: 'app-biblio',
@@ -17,7 +18,7 @@ export class BiblioComponent implements OnInit {
   list: List[];
   display = 'none';
 
-  constructor(private bdd: BddService) { }
+  constructor(private bdd: BddService,private player:PlayerService) { }
 
   // expand search bar
   displaySearch() {
@@ -79,6 +80,11 @@ export class BiblioComponent implements OnInit {
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   } 
+
+// Send object to player
+lire(m:Music){
+  this.player.setMusic(m);
+}
 
 
   ngOnInit() {
