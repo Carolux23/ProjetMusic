@@ -41,12 +41,10 @@
           </div>
 
           <div class="row">
-            <ul>
-              <li><h5 class="sousSousTitre" [routerLink]="['/playlist', '1']">myPlaylist 1</h5></li>
-              <li><h5 class="sousSousTitre" [routerLink]="['/playlist', '2']">myPlaylist 2</h5></li>
+            <ul *ngFor="let pl of list">
+              <li><h5 class="sousSousTitre" [routerLink]="['/playlist', pl.id]">{{pl.nom}}</h5></li>
             </ul>
           </div>
-
         </div>
       </div>
     </div>
