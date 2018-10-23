@@ -8,18 +8,25 @@
 h5 {
     text-align: center;
     font-weight: bold;
-    margin-bottom: 5vh;
+    color: white;
 }
 
 /* "Delete" button style*/
 #waste {
-    margin-left: 0.3vw;
-    width: 2.5vw;
-    float: right;
+    width: 2vw;
+    height: 2vw;
 }
-#waste {
+#waste:hover {
     cursor: pointer;
 }
+#eye {
+    width: 2vw;
+    height: 2vw;
+}
+#eye:hover {
+    cursor: pointer;
+}
+
 
 /* "view" button style */
 .btn {
@@ -35,28 +42,61 @@ h5 {
 }
 
 /* Card design */
-.card {
+.plusCard {
     border: solid 3px goldenrod;
     border-radius: 15px;
-    margin: 2vh;
     box-shadow: 6px 6px 6px black;
-    height: 100%;
+    
     -webkit-transform: scale(1);
     transform: scale(1);
+    position: absolute;
 }
+
+#myCard  {
+    height: 100%;
+    width: 100%;
+    border: solid 3px goldenrod;
+    border-radius: 15px;
+}
+
+#text-img {
+    position: absolute;
+    bottom:0;
+    width: 92%;
+    height: 22%;
+    border-radius: 0px 0px 15px 15px;
+    opacity: 0.8;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+#inside-text-img {
+    display: flex;
+    padding-top: 1.5vh;
+    justify-content: space-around; 
+}
+
 /* Card animation */
-.card:hover {
+/*
+.plusCard:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     transition: 0.5s;
 }
-.card:not(:hover) { 
+.plusCard:not(:hover) { 
     transition: 0.5s;
 }
-.card-body {
-    height: 15vh;
-}
 
+#myCard:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.5s; 
+}
+#myCard:not(:hover) { 
+    transition: 0.5s;
+}
+*/
 /* Manage mosaic img layout */
 .img-play {
     width: 50%;
@@ -68,18 +108,21 @@ h5 {
 #haut-dte {
     border-radius: 0px 13px 0px 0px;
 }
-#bas-gche, #bas-dte {
-    border-radius: 0px 0px 0px 0px;;
+#bas-gche {
+    border-radius: 0px 0px 0px 13px;;
 }
-#mosaique {
-    border-bottom: solid 3px goldenrod;
+#bas-dte {
+    border-radius: 0px 0px 13px 0px;;
 }
+
 
 /* "Add" card style */
 .ajouter {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    background-color: white;
 }
 .img-add {
     width: 8vw;

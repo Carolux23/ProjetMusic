@@ -14,17 +14,17 @@ export class BddService {
   constructor(private http: HttpClient) { }
 
   getBib() {
-    const biblioUrl = 'http://localhost:8080/biblio';
+    const biblioUrl = 'http://10.160.2.45:8080/biblio';
     return this.http.get<Music>(biblioUrl);
   }
 
   getList() {
-    const listUrl = 'http://localhost:8080/list';
+    const listUrl = 'http://10.160.2.45:8080/list';
     return this.http.get<List>(listUrl);
   }
 
   getPlayList(id: number) {
-    const playListsUrl = 'http://localhost:8080/playlist/' + id;
+    const playListsUrl = 'http://10.160.2.45:8080/playlist/' + id;
     return this.http.get<Playlist>(playListsUrl);
   }
 
