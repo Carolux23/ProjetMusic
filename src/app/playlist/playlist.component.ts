@@ -30,27 +30,25 @@ export class PlaylistComponent implements OnInit {
     getUrl.subscribe((data: any) => {
     this.content = data;
     console.log('playlists obtained from json-server');
-  }, (error) => {
-    this.bdd.handleError(error);
-});
+    }, (error) => {
+      this.bdd.handleError(error);
+    });
   }
 
-  // Check bdd service to be fully implemented
+  // To delete the music in its playlist
   deleteMusic(music: Music) {
-    //TODO: implement with changes of classes
-    /*
     // This code is indended to delete the music card from the display
-    const i: number = this.content.indexOf(music);
-    this.content.splice(i, 1);
+    const i: number = this.content.playlist.indexOf(music);
+    this.content.playlist.splice(i, 1);
 
     // This code delete the same object from the json server
-    this.bdd.delTitle(music).subscribe((data: any) => {
+    this.playListNo = this.content.id;
+    this.bdd.delTitle(music, this.playListNo).subscribe((data: any) => {
       console.log('Delete request successfull');
     },
     (error: any) => {
-    this.bdd.handleError(error);
-    });*/
-    console.log('Trash impossible, method not implemented');
+      this.bdd.handleError(error);
+    });
   }
 
   ngOnInit() {
