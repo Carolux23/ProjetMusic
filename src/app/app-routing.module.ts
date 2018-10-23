@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PlaylistComponent } from './playlist/playlist.component';
 import { GenreComponent } from './genre/genre.component';
 import { OnPlayComponent } from './on-play/on-play.component';
+import { InGenreComponent } from './in-genre/in-genre.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/biblio', pathMatch: 'full' },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'genre', component: GenreComponent },
   { path: 'navbar', component: NavbarComponent },
   { path: 'playlist', component: PlaylistComponent },
-  {path : 'onPlay', component: OnPlayComponent}
+  {path : 'onPlay', component: OnPlayComponent},
+  {path : 'inGenre', component: InGenreComponent}
 ];
 
 @NgModule({

@@ -41,7 +41,6 @@ export class BddService {
 
 
 
-
   // json server error handling
   //
   handleError(error: HttpErrorResponse) {
@@ -59,6 +58,7 @@ export class BddService {
     return throwError(
       'Something bad happened; please try again later.');
   }
+
 
 
 }
