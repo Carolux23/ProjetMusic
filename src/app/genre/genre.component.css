@@ -15,7 +15,27 @@
     src: url('../../assets/slice.ttf');
 }
 
-.container-fluid {
+.card-deck {
+    display: flex;
+    justify-content: space-around;
+}
+.card-body {
+    padding:0;
+}
+.myCard {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.myCard:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+.myCard:not(:hover) {
+    transition: 0.5s;
+}
+
+#top {
     background-color:  #383737;
     padding: 5vw;
     position: absolute;
@@ -29,11 +49,145 @@ h1 {
 }
 h5 {
     text-align: center;
+    font-size: 1em;
 }
 * {
     border: none;
     background-color: transparent;
 }
-.col-12 {
+.col-6 {
     padding: 0;
+}
+
+
+
+
+
+
+/* Display musics */
+
+.col-12 {
+    display: flex;
+    justify-content: center;
+}
+
+/* General style for the card*/
+#card-bottom {
+    background-color: white;
+    margin: 2vh;
+    padding: 0;
+    position: relative;
+    width: 80%;
+    padding: 0;
+    border: solid 3px goldenrod;
+    border-radius: 15px;
+    box-shadow: 6px 6px 6px black;
+    overflow: hidden;
+}
+
+/* fixing the images's size */
+.myImg {
+    width: 100%;
+    height: auto;
+}
+
+.card-artist {
+    position: relative;
+    margin: 0;
+    padding-left: 1vh;
+    border-top: solid 3px goldenrod;
+    width: 100%;
+    color: #383737;
+}
+.card-title {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    color: GoldenRod;
+    padding-left: 1.5vh;
+}
+
+/* Menu CSS */
+#player {
+    width: 80%;
+}
+
+.pos-f-t {
+    width: 15%;
+    z-index: 2;
+}
+
+.addTo{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.addTitle{
+    position: relative;
+    margin: 0;
+    padding-left: 1vh;
+    width: 100%;
+    color: #383737;
+}
+
+#pl{
+    margin-left: 4vh;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    color: GoldenRod;
+    padding-left: 1.5vh;
+}
+
+/* Effect when mouseover the "plus" */
+.addTo:hover {
+    animation-name: bumps;
+    animation-duration: 200ms;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+@keyframes bumps {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.1, 1.1);
+    }
+}
+
+
+#myBiblio {
+    background-color:  #383737;
+    padding: 8vh;
+    padding-top: 40vh;
+}
+
+/* Go to top button style */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 15vh;
+    right: 1vw; 
+    z-index: 300;
+    border: none;
+    outline: none; 
+    background-color: black;
+    color: white; 
+    cursor: pointer; 
+    border-radius: 10px; 
+    font-size: 18px;
+    opacity: 0.4;
+    font-family: arial;
+    font-size: 2em;
+    width: 4vw;
+    height: 8vh;
+    margin-bottom: 2vh;
+    font-weight: bold;
+}
+
+#myBtn:hover {
+    background-color: #555;
+    opacity: 1;
 }

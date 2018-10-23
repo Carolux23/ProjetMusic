@@ -16,6 +16,7 @@ import { FormsModule }   from '@angular/forms';
 
 
 import { OnPlayComponent } from './on-play/on-play.component';
+import { InGenreComponent } from './in-genre/in-genre.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { OnPlayComponent } from './on-play/on-play.component';
     GenrePipe,
 
     SearchPipe,
-    OnPlayComponent
+    OnPlayComponent,
+    InGenreComponent
   ],
   imports: [
     BrowserModule,

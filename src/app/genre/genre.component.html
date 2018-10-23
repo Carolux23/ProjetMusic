@@ -1,81 +1,81 @@
-<div class="container-fluid">
+<div class="container-fluid" id="top">
   
     <!--The differents kind's cards-->
-    <div class="card-deck">
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="card">
+    <div class="row card-deck">
+      <div class="col-lg-1 col-md-3 col-sm-4 col-6">
+        <div class="card myCard" (click)="displayGenre('pop')">
           <img class="card-img-top" src="../../assets/pop.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Pop</h5>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="card">
+      <div class="col-lg-1 col-md-3 col-sm-4 col-6">
+        <div class="card myCard" (click)="displayGenre('hiphop')">
           <img class="card-img-top" src="../../assets/hiphop.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Hip-Hop</h5>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="card">
+      <div class="col-lg-1 col-md-3 col-sm-4 col-6">
+        <div class="card myCard" (click)="displayGenre('classic')">
           <img class="card-img-top" src="../../assets/classique.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Classique</h5>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="card">
+      <div class="col-lg-1 col-md-3 col-sm-4 col-6">
+        <div class="card myCard" (click)="displayGenre('ambiance')">
           <img class="card-img-top" src="../../assets/ambiance.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Ambiance</h5>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="card">
+      <div class="col-lg-1 col-md-3 col-sm-4 col-6">
+        <div class="card myCard" (click)="displayGenre('chill')">
           <img class="card-img-top" src="../../assets/chill.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Chill</h5>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="card">
+      <div class="col-lg-1 col-md-3 col-sm-4 col-6">
+        <div class="card myCard" (click)="displayGenre('jazz')">
           <img class="card-img-top" src="../../assets/jazz.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Jazz</h5>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="card">
+      <div class="col-lg-1 col-md-3 col-sm-4 col-6">
+        <div class="card myCard" (click)="displayGenre('electro')">
           <img class="card-img-top" src="../../assets/electro.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Electro</h5>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="card">
+      <div class="col-lg-1 col-md-3 col-sm-4 col-6">
+        <div class="card myCard" (click)="displayGenre('rock')">
           <img class="card-img-top" src="../../assets/rock.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Rock</h5>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="card">
+      <div class="col-lg-1 col-md-3 col-sm-4 col-6">
+        <div class="card myCard" (click)="displayGenre('indie')">
           <img class="card-img-top" src="../../assets/indie.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Indie</h5>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="card">
+      <div class="col-lg-1 col-md-3 col-sm-4 col-6">
+        <div class="card myCard" (click)="displayGenre('film')">
           <img class="card-img-top" src="../../assets/film.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Film</h5>
@@ -83,5 +83,43 @@
         </div>
       </div>
     </div>
+  </div>
+
+
+  <div class="container-fluid" id="bottom">
+    <div class="row" id="myBiblio">
+    <!--ngFor to display music cards on screen and search pipe to aplly filters when searching title or artist-->
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let music of genreTable">
+      <div class="card" id="card-bottom">
+        <div class="card-body">
+          <!--linking BDD's images and music's titles and artists-->
+          <img class="card-img-top myImg" src=".\src\assets\musics\{{music.lien_img}}" alt="Album-image">
+          <h5 class="card-artist">{{music.interprete}}</h5>
+          <p class="card-title">{{music.titre}}</p>
+
+          <!--buttons in the card-->
+          <div class="d-flex justify-content-around align-items-center">
+            <div class="dropup pos-f-t">
+              <button type="" class="addTo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="myImg" id="addTo" src=".\src\assets\plus.png" alt="add">
+              </button>
+              <div class="dropdown-menu">
+                <p class="addTitle">Add to :</p>
+                <div *ngFor="let playList of list">
+                  <a id="pl" routerLink="/playlist" (click)="addTo(playList, music)">{{playList.name}}</a>
+                </div>
+              </div>
+            </div>
+
+            <!--audio player-->
+            <audio id="player" controls>
+              <source src=".\src\assets\musics\{{music.lien_audio}}" type="audio/mpeg">
+            </audio>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
