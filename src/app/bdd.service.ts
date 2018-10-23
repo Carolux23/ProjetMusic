@@ -14,29 +14,29 @@ export class BddService {
   constructor(private http: HttpClient) { }
 
   getBib() {
-    const biblioUrl = 'http://10.160.2.45:8080/biblio';
+    const biblioUrl = 'http://localhost:8080/biblio';
     return this.http.get<Music>(biblioUrl);
   }
 
   getList() {
-    const listUrl = 'http://10.160.2.45:8080/list';
+    const listUrl = 'http://localhost:8080/list';
     return this.http.get<List>(listUrl);
   }
 
   getPlayList(id: number) {
-    const playListsUrl = 'http://10.160.2.45:8080/playlist/' + id;
+    const playListsUrl = 'http://localhost:8080/playlist/' + id;
     return this.http.get<Playlist>(playListsUrl);
   }
 
   addTitleTo(music: Music, playListNo: Playlist) {
     // TODO: implement proper url for playlist
-    const pLUrl = 'http://10.160.2.45:8080/playList/' + playListNo + '/' + music.id;
+    const pLUrl = 'http://localhost:8080/playList/' + playListNo + '/' + music.id;
     return this.http.post(pLUrl, music);
   }
 
   delTitle(music: Music, playListNo: number) {
     // TODO: implement proper url for playlist
-    const pLUrl = 'http://10.160.2.45:8080/playlist/' + playListNo + '/' + music.id;
+    const pLUrl = 'http://localhost:8080/playlist/' + playListNo + '/' + music.id;
     return this.http.delete(pLUrl);
   }
 

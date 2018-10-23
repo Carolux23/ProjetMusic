@@ -46,6 +46,7 @@ export class GenreComponent implements OnInit {
   }
 
   // Add music to playlist
+ /*
   addTo(playlist: Playlist, music: Music) {
       this.bdd. addTitleTo(playlist, music).subscribe((data: any) => {
 
@@ -53,7 +54,7 @@ export class GenreComponent implements OnInit {
         this.bdd.handleError(error);
       });
   }
-
+*/
 
   // Got to top quickly function (appearing when scrolling)
   @HostListener('window:scroll', [])
