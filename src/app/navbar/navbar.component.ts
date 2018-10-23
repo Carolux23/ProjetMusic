@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { List } from '../list';
+import { BddService } from '../bdd.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,10 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+    list: List[];
+
+  constructor(private bdd: BddService) { }
+
+
+  getList() {
+    const getUrl = this.bdd.getList();
+    getUrl.subscribe((data: any) => {
+    this.list = data;
+    console.log('list obtained from json-server');
+    console.log('list');
+  }, (error) => {
+    this.bdd.handleError(error);
+});
+}
 
 
   ngOnInit() {
+    this.getList();
   }
 
 }
