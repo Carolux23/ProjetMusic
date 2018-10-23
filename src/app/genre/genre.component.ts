@@ -49,7 +49,7 @@ export class GenreComponent implements OnInit {
  /*
   addTo(playlist: Playlist, music: Music) {
       this.bdd. addTitleTo(playlist, music).subscribe((data: any) => {
-        console.log('adding title to playlist ' + playlist.id);
+
       }, (error) =>{
         this.bdd.handleError(error);
       });

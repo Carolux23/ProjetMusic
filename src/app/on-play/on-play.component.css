@@ -15,3 +15,7 @@
 p, h5 {
     margin: 0;
 }
+img{
+    width: auto;
+    height: 50px;
+}
