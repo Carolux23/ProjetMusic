@@ -13,7 +13,7 @@ export class BddService {
   constructor(private http: HttpClient) { }
 
   getBib() {
-    const biblioUrl = 'http://localhost:8080/biblio/';
+    const biblioUrl = 'http://localhost:8080/biblio';
     return this.http.get<Music>(biblioUrl);
   }
 
