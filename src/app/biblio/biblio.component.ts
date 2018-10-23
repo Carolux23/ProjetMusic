@@ -53,14 +53,15 @@ export class BiblioComponent implements OnInit {
   }
 
   // Add music to playlist
+/*
   addTo(playlist: Playlist, music: Music) {
-      this.bdd.addTitleTo(playlist, music).subscribe((data: any) => {
+      this.bdd.addTitleTo(music, playlist).subscribe((data: any) => {
         console.log('adding title to playlist ' + playlist.id);
       }, (error) => {
         this.bdd.handleError(error);
       });
   }
-
+*/
 
   // Got to top quickly function (appearing when scrolling)
   @HostListener('window:scroll', [])
