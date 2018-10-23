@@ -3,6 +3,7 @@ import { Music } from '../music';
 import { BddService } from '../bdd.service';
 import { Playlist } from '../playlist';
 import { $ } from 'protractor';
+import { List } from '../list';
 
 @Component({
   selector: 'app-biblio',
@@ -13,7 +14,7 @@ export class BiblioComponent implements OnInit {
 
   // variables
   musicTable: Music[];
-  list: Playlist[];
+  list: List[];
   display = 'none';
 
   constructor(private bdd: BddService) { }
@@ -53,8 +54,8 @@ export class BiblioComponent implements OnInit {
 
   // Add music to playlist
   addTo(playlist: Playlist, music: Music) {
-      this.bdd. addTitleTo(playlist, music).subscribe((data: any) => {
-        console.log('adding title to playlist ' + playlist.nom);
+      this.bdd.addTitleTo(playlist, music).subscribe((data: any) => {
+        console.log('adding title to playlist ' + playlist.id);
       }, (error) => {
         this.bdd.handleError(error);
       });
@@ -63,7 +64,7 @@ export class BiblioComponent implements OnInit {
 
   // Got to top quickly function (appearing when scrolling)
   @HostListener('window:scroll', [])
-  onWindowScroll() {this.scrollFunction();};
+  onWindowScroll() {this.scrollFunction(); }
 
   scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

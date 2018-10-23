@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Music } from '../music';
 import { BddService } from '../bdd.service';
+import { ActivatedRoute } from '@angular/router';
 import { Playlist } from '../playlist';
 
 @Component({
@@ -11,15 +12,20 @@ import { Playlist } from '../playlist';
 export class PlaylistComponent implements OnInit {
 
   // Variables
-  content: Music[];
+  content: Playlist;
   playListNo: number;
 
-  constructor(private bdd: BddService) { }
+  // Intended to read Argument from the router corresponding to playlist id
+  id: number;
+  private sub: any;
+
+  constructor(private bdd: BddService, private route: ActivatedRoute) { }
+
 
   // To display playlist
-  getPlayList() {
+  getPlayList(id: number) {
     console.log('looking for that playList');
-    const getUrl = this.bdd.getPlayList();
+    const getUrl = this.bdd.getPlayList(id);
 
     getUrl.subscribe((data: any) => {
     this.content = data;
@@ -31,6 +37,8 @@ export class PlaylistComponent implements OnInit {
 
   // Check bdd service to be fully implemented
   deleteMusic(music: Music) {
+    //TODO: implement with changes of classes
+    /*
     // This code is indended to delete the music card from the display
     const i: number = this.content.indexOf(music);
     this.content.splice(i, 1);
@@ -41,11 +49,17 @@ export class PlaylistComponent implements OnInit {
     },
     (error: any) => {
     this.bdd.handleError(error);
-    });
+    });*/
+    console.log('Trash impossible, method not implemented');
   }
 
   ngOnInit() {
-    this. getPlayList();
+      this.sub = this.route.params.subscribe(params => {
+      this.id = +params['id']; // (+) converts string 'id' to a number
+      let intId: number;
+      intId = Number(this.id);
+      this. getPlayList(intId);
+   });
 
   }
 

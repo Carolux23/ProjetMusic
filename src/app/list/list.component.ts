@@ -27,10 +27,7 @@ export class ListComponent implements OnInit {
 });
 }
 
-  // This method should call for a specific playlist from the database
-  getPlayList() {
-    console.log('looking for that playList ');
-  }
+
 
   ngOnInit() {
     this.getList();

@@ -3,6 +3,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { Music } from './music';
 import { Playlist } from './playlist';
+import { List } from './list';
 
 
 @Injectable({
@@ -18,13 +19,13 @@ export class BddService {
   }
 
   getList() {
-    const listUrl = 'http://localhost:8080/list/';
-    return this.http.get<Playlist>(listUrl);
+    const listUrl = 'http://localhost:8080/list';
+    return this.http.get<List>(listUrl);
   }
 
-  getPlayList() {
-    const playListsUrl = 'http://localhost:3000/playList-01';
-    return this.http.get<Music>(playListsUrl);
+  getPlayList(id: number) {
+    const playListsUrl = 'http://localhost:8080/playlist/' + id;
+    return this.http.get<Playlist>(playListsUrl);
   }
 
   addTitleTo(playlist: Playlist, music: Music) {

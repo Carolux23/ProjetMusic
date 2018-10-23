@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'biblio', component: BiblioComponent },
   { path: 'genre', component: GenreComponent },
   { path: 'navbar', component: NavbarComponent },
-  { path: 'playlist', component: PlaylistComponent },
+  { path: 'playlist/:id', component: PlaylistComponent },
   {path : 'onPlay', component: OnPlayComponent}
 ];
 
