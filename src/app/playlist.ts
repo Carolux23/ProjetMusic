@@ -1,5 +1,8 @@
+import { Music } from './music';
+
 export interface Playlist {
         id: number;
-        name: string;
-        lien: string;
+        nom: string;
+        playlist: Music[];
+
 }

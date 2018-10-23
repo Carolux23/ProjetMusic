@@ -29,7 +29,7 @@
               <div class="dropdown-menu">
                 <p class="addTitle">Add to :</p>
                 <div *ngFor="let playList of list">
-                  <a id="pl" routerLink="/playlist" (click)="addTo(playList, music)">{{playList.name}}</a>
+                  <a id="pl" routerLink="/playlist" (click)="addTo(playList, music)">{{playList.nom}}</a>
                 </div>
               </div>
             </div>
