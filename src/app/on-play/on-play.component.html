@@ -2,16 +2,16 @@
   <div class="col-4">
     <!--General audio player-->
     <div>
-      <h5 class="row">Interprète</h5>
-      <p class="row">Titre</p>
+      <h5 class="row">{{music.interprete}}</h5>
+      <p class="row">{{music.titre}}</p>
     </div>
   </div>
   <div class="col-2">
-    <img src=".\src\assets\musics\" alt="Album-image">
+    <img src=".\src\assets\musics\{{music.lien_img}}">
   </div>
   <div class="col-6">
     <audio id="player" controls>
-      <source src=".\src\assets\musics\" type="audio/mpeg">
+      <source src=".\src\assets\musics\{{music.lien_audio}}" type="audio/mpeg">
     </audio>
   </div>
 </div>
