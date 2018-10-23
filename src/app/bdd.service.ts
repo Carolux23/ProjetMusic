@@ -13,12 +13,12 @@ export class BddService {
   constructor(private http: HttpClient) { }
 
   getBib() {
-    const biblioUrl = 'http://localhost:3000/Biblio';
+    const biblioUrl = 'http://localhost:8080/biblio/';
     return this.http.get<Music>(biblioUrl);
   }
 
   getList() {
-    const listUrl = 'http://localhost:3000/list';
+    const listUrl = 'http://localhost:8080/list/';
     return this.http.get<Playlist>(listUrl);
   }
 
