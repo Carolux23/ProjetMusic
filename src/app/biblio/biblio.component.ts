@@ -1,8 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { Music } from '../music';
 import { BddService } from '../bdd.service';
-import { Playlist } from '../playlist';
-import { $ } from 'protractor';
 import { List } from '../list';
 import { PlayerService } from '../player.service';
 
@@ -18,7 +16,7 @@ export class BiblioComponent implements OnInit {
   list: List[];
   display = 'none';
 
-  constructor(private bdd: BddService,private player:PlayerService) { }
+  constructor(private bdd: BddService, private player: PlayerService) { }
 
   // expand search bar
   displaySearch() {
@@ -70,9 +68,9 @@ export class BiblioComponent implements OnInit {
 
   scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById('myBtn').style.display = "block";
+          document.getElementById('myBtn').style.display = 'block';
       } else {
-          document.getElementById("myBtn").style.display = "none";
+          document.getElementById('myBtn').style.display = 'none';
       }
   }
 
@@ -80,10 +78,10 @@ export class BiblioComponent implements OnInit {
   topFunction() {
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  } 
+  }
 
 // Send object to player
-lire(m:Music){
+lire(m: Music) {
   this.player.setMusic(m);
 }
 

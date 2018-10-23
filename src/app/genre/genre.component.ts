@@ -11,7 +11,7 @@ import { Playlist } from '../playlist';
   styleUrls: ['./genre.component.css']
 })
 export class GenreComponent implements OnInit {
- 
+
   genreTable: Music[] = [];
   list: Playlist[] = [];
 
